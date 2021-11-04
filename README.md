@@ -1,5 +1,5 @@
 # mijn CV
 
-in het Nederlands
+CV in het Nederlands
 
 Nov 2021
