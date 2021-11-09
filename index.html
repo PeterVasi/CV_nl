@@ -22,11 +22,12 @@
   display: table;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the 4 columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
   .column {
     width: 100%;
   }
+}
 </style>
 <body class="w3-light-grey">
 
@@ -34,16 +35,16 @@
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
     <!-- The Grid -->
-    <div class="w3-row-padding">
+  <div class="w3-row-padding">
   
     <!-- Left Pane -->
     <div class="w3-third">
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-		  <img src="https://drive.google.com/uc?export=view&id=134iglTNQfUfUcanZFvecHkGYhyFTSKUL" style="width:100%" alt="PVasi Photo">
-		  <!--img src="https://drive.google.com/uc?export=view&id=1f0eojfgMdfL9SvRh15CiLyXLb1IBZncT" style="width:100%" alt="PVasi Photo"-->
-		  <div class="w3-display-bottomleft w3-container w3-text-white">
-		    <h2>Peter Vasi</h2>
+		      <img src="https://drive.google.com/uc?export=view&id=134iglTNQfUfUcanZFvecHkGYhyFTSKUL" style="width:100%" alt="PVasi Photo">
+		      <!--img src="https://drive.google.com/uc?export=view&id=1f0eojfgMdfL9SvRh15CiLyXLb1IBZncT" style="width:100%" alt="PVasi Photo"-->
+		      <div class="w3-display-bottomleft w3-container w3-text-white">
+		        <h2>Peter Vasi</h2>
        	  </div>
         </div>
         <div class="w3-container">
@@ -65,14 +66,14 @@
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
           </div>
-		  <p>Software Ontwikkeling</p>
+		      <p>Software Ontwikkeling</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
           </div>
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Talen</b></p>
-		  <p>Hongaars</p>
+		      <p>Hongaars</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
           </div>
@@ -90,67 +91,73 @@
           </div>
           <br>
         </div>
-      </div><br>
+      </div>
+      <br>
     </div>
     <!-- End Left Pane -->
 
     <!-- Right Pane -->
     <div class="w3-twothird">
+      
+      <!-- Personal Characteristics with # -->
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
         <h2 class="w3-text-teal w3-padding-small w3-large"><i>#analytisch denken</i></h2>
         <h2 class="w3-text-teal w3-padding-small w3-large"><i>#systeem benadering</i></h2>
         <h2 class="w3-text-teal w3-padding-small w3-large"><i>#flexibiliteit</i></h2>
         <h2 class="w3-text-teal w3-padding-small w3-large"><i>#loyaliteit</i></h2>
-	  </div>	
+	    </div>
+      
+      <!-- Work Experience -->
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-	    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Werkervaring</h2>
+	      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Werkervaring</h2>
         <div class="w3-container">
           <h5 class="w3-text-teal"><b>Specialist in Wegenonderzoek</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2020 <span class="w3-tag w3-teal w3-opacity w3-round">meest recente job</span></h6>
-	      <p onclick="ShowHide('ListSURVEYS')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Ramboll Zweden<br>T7 Engineering Hongarije<br><span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span></p>
-	      <div id="ListSURVEYS" class="w3-container w3-white w3-hide">
-		    <p>Planning en uitvoering van wegconditieonderzoeken, verwerking en visualisering meetresultaten</p>
- 		    <ul>
-  			  <li>Road Surface Tester - Laser RST</li>
-  			  <li>Road Marking Retroreflectometer - RMT, DELTA LTL-M</li>
-  			  <li>Ground Penetrating Radar - GPR, 3D-Radar</li>
-  			  <li>Road Friction Tester - ViaFriction</li>
-  			  <li>Falling Weight Deflectometer - KUAB, Curviameter</li>			  
-		    </ul>
-        <div class="row">
-          <div class="column">
-            <img src="https://drive.google.com/uc?export=view&id=1yKsXrqqFFBOrVvZRFyEwE2g9bq5cpuEk" style="width:100%;" alt="RST">
-          </div>
-          <div class="column">
-            <img src="https://drive.google.com/uc?export=view&id=1Zimm-7uMZBTWBvRZ5RyxsnItE-tOXyp1" style="width:100%;" alt="RMT">
-          </div>
-          <div class="column">
-            <img src="https://drive.google.com/uc?export=view&id=1zmD4GTQld5O-W1wkAns3XLH5ZlfSGvTF" style="width:100%;" alt="GPR 3D-Radar">
-          </div>
-          <div class="column">
-            <img src="https://drive.google.com/uc?export=view&id=1jpKItm8nRapkFxnvZKcC9mpJdiVP2mhl" style="width:100%;" alt="ViaFriction">
-          </div>
+	        <p onclick="ShowHide('ListSURVEYS')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Ramboll Zweden<br>T7 Engineering Hongarije<br><span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span></p>
+	        <div id="ListSURVEYS" class="w3-container w3-white w3-hide">
+		        <p>Planning en uitvoering van wegconditieonderzoeken, verwerking en visualisering meetresultaten</p>
+ 		        <ul>
+  			      <li>Road Surface Tester - Laser RST</li>
+  			      <li>Road Marking Retroreflectometer - RMT, DELTA LTL-M</li>
+  			      <li>Ground Penetrating Radar - GPR, 3D-Radar</li>
+  			      <li>Road Friction Tester - ViaFriction</li>
+  			      <li>Falling Weight Deflectometer - KUAB, Curviameter</li>			  
+		        </ul>
+            <div class="row">
+              <div class="column">
+                <img src="https://drive.google.com/uc?export=view&id=1yKsXrqqFFBOrVvZRFyEwE2g9bq5cpuEk" style="width:100%;" alt="RST">
+              </div>
+              <div class="column">
+                <img src="https://drive.google.com/uc?export=view&id=1Zimm-7uMZBTWBvRZ5RyxsnItE-tOXyp1" style="width:100%;" alt="RMT">
+              </div>
+              <div class="column">
+                <img src="https://drive.google.com/uc?export=view&id=1zmD4GTQld5O-W1wkAns3XLH5ZlfSGvTF" style="width:100%;" alt="GPR 3D-Radar">
+              </div>
+              <div class="column">
+                <img src="https://drive.google.com/uc?export=view&id=1jpKItm8nRapkFxnvZKcC9mpJdiVP2mhl" style="width:100%;" alt="ViaFriction">
+              </div>
+            </div>
+	        </div>     
+          <hr>
         </div>
-	      </div>     
-        <hr>
-        </div>
+        
         <div class="w3-container">
-            <h5 class="w3-text-teal"><b>Specialist in Verkeersveiligheid</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2002 - 2005</h6>
+          <h5 class="w3-text-teal"><b>Specialist in Verkeersveiligheid</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2002 - 2005</h6>
 	        <p onclick="ShowHide('ListMINISTRY')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Ministerie van Transport
-                <br>
-                <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
-            </p>
+          <br>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
+          </p>
 	        <div id="ListMINISTRY" class="w3-container w3-white w3-hide">
 		        <p>Hoofd van afd. Verkeersveiligheid</p>
  		        <ul>
-  			    <li>Analyse</li>
-  			    <li>Policy Making</li>
-  			    <li>Actieplan voor verkeersveiligheid</li>
-  			    <li>Harmonisatikwesties EU-wetgeving</li>
+  			      <li>Analyse</li>
+  			      <li>Policy Making</li>
+  			      <li>Actieplan voor verkeersveiligheid</li>
+  			      <li>Harmonisatikwesties EU-wetgeving</li>
 		        </ul>
 	        </div>          
-            <hr>
+          <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-text-teal"><b>Wegconditieonderzoek Ingenieur, Verkeers Ingenieur, Databank Ingenieur</b></h5>
@@ -160,6 +167,9 @@
           <p>Snelweg Directoraat</p>
         </div>
       </div>
+      
+
+      <!-- Other Work Experience -->
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Andere Ervaringen en Vaardigheden</h2>
         <div class="w3-container">
@@ -169,46 +179,44 @@
               <br>
               <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
           </p>
-        <div id="ListPIARC" class="w3-container w3-white w3-hide">
-        <img src="https://www.piarc.org/ressources/documents/2398,Logo-HR300.jpg" style="width:30%; display:block; margin:auto" alt="AIPCR/PIARC">	
-       <ul>
-        <li>
-        <a href="https://www.piarc.org/en/"  target="_blank">AIPCR/PIARC World Road Association</a> is waarschijnlijk de meest vooraanstaande internationale organisatie 
-        op het gebied van wegenbeheer en wegenontwikkeling. 
-        De Vereneging heeft nu wereldwijd 121 regeringsleden en behoudt de raadgevende status van de Economische en Social Raad van de Verenigde Naties. 
-        Ik had het voorrecht om Hongarije te vertegenwoordigen in de Verkeersveiligheid Comissie van AIPCR/PIARC tussen 1996 en 2003.
-      </li>
-      <li>
-        Een van de belangrijkste bijdragen van de Vereneging in die periode was Road Safety Manual. 
-        Mijn bijdrage aan de Manual was het schrijven van het hoofdstuk Data Collection.
-      </li>
-        </ul>
-    <img src="https://www.piarc.org/ressources/cover/6/14750-Manuel-Securite-Routiere-Association-Mondiale-de-la-Route.jpg" style="width:20%; display:block; margin:auto" alt="RoadSafetyManual">		
-      </div>          
-        <p onclick="ShowHide('ListGRSP')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Global Road Safety Partnership (GRSP)
-              <br>
-              <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
+          <div id="ListPIARC" class="w3-container w3-white w3-hide">
+            <img src="https://www.piarc.org/ressources/documents/2398,Logo-HR300.jpg" style="width:30%; display:block; margin:auto" alt="AIPCR/PIARC">	
+            <ul>
+              <li>
+                <a href="https://www.piarc.org/en/"  target="_blank">AIPCR/PIARC World Road Association</a> is waarschijnlijk de meest vooraanstaande internationale organisatie 
+                op het gebied van wegenbeheer en wegenontwikkeling. 
+                De Vereneging heeft nu wereldwijd 121 regeringsleden en behoudt de raadgevende status van de Economische en Social Raad van de Verenigde Naties. 
+                Ik had het voorrecht om Hongarije te vertegenwoordigen in de Verkeersveiligheid Comissie van AIPCR/PIARC tussen 1996 en 2003.
+              </li>
+              <li>
+                Een van de belangrijkste bijdragen van de Vereneging in die periode was Road Safety Manual. 
+                Mijn bijdrage aan de Manual was het schrijven van het hoofdstuk Data Collection.
+              </li>
+            </ul>
+            <img src="https://www.piarc.org/ressources/cover/6/14750-Manuel-Securite-Routiere-Association-Mondiale-de-la-Route.jpg" style="width:20%; display:block; margin:auto" alt="RoadSafetyManual">		
+          </div>          
+          <p onclick="ShowHide('ListGRSP')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Global Road Safety Partnership (GRSP)
+            <br>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
           </p>
-      <div id="ListGRSP" class="w3-container w3-white w3-hide">
-      <img src="https://www.grsproadsafety.org/wp-content/uploads/grsproadsafety_logo.png" style="width:60%; display:block; margin:auto" alt="GRSP">
-       <ul>
-        <li>Het doel van <a href="https://www.grsproadsafety.org/"  target="_blank">GRSP Global Road Safety Partnership</a> is het creëren en ondersteunen 
-      van multisectorale verkeersveiligheids samenwerkingsverbanden die zich bezighouden met front-line interventies op het gebied van verkeersveiligheid in landen en gemeenschappen over de hele wereld. 
-      Tussen 2000 en 2005 kreeg ik de kans om te werken als programmacoördinator voor GRSP Hongarije.</li>
-      <li>In 2005 hielp ik het werk van GRSP Sakhalin Island (Rusland) als externe specialist in opdracht van GRSP Geneve en het Internationale Rode Kruis (IFRC).</li>
-        </ul>
-      </div>          
-        <p>Europese Raad - Werkgroep EU Rijbewijsharmonisatie</p>
-        <hr>
-      </div>
-      <div class="w3-container">
-        <h5 class="w3-text-teal"><b>Ervaring in Bedrijfsbeheer</b></h5>
-        <p>
-          Bestuurslid in een provinciaal Openbaar Vervoer Bedrijf in Hongarije
-        </p>
-        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2002 - 2004</h6>
-        <hr>
-      </div>
+          <div id="ListGRSP" class="w3-container w3-white w3-hide">
+            <img src="https://www.grsproadsafety.org/wp-content/uploads/grsproadsafety_logo.png" style="width:60%; display:block; margin:auto" alt="GRSP">
+            <ul>
+              <li>Het doel van <a href="https://www.grsproadsafety.org/"  target="_blank">GRSP Global Road Safety Partnership</a> is het creëren en ondersteunen 
+              van multisectorale verkeersveiligheids samenwerkingsverbanden die zich bezighouden met front-line interventies op het gebied van verkeersveiligheid in landen en gemeenschappen over de hele wereld. 
+              Tussen 2000 en 2005 kreeg ik de kans om te werken als programmacoördinator voor GRSP Hongarije.</li>
+              <li>In 2005 hielp ik het werk van GRSP Sakhalin Island (Rusland) als externe specialist in opdracht van GRSP Geneve en het Internationale Rode Kruis (IFRC).</li>
+            </ul>
+          </div>          
+          <p>Europese Raad - Werkgroep EU Rijbewijsharmonisatie</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-text-teal"><b>Ervaring in Bedrijfsbeheer</b></h5>
+          <p>Bestuurslid in een provinciaal Openbaar Vervoer Bedrijf in Hongarije</p>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2002 - 2004</h6>
+          <hr>
+        </div>
         <div class="w3-container">
           <h5 class="w3-text-teal"><b>Digitale Vaardigheden</b></h5>
     		  <p>Data Management</p>
@@ -228,15 +236,13 @@
 		        </ul>
 	        </div>          
 	        <p onclick="ShowHide('ListWebScripts')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Cloud Based Data Visualizations and Web Applications
-                <br>
-                <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier om voorbeelden te tonen/verbergen</i></span>
+            <br>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier om voorbeelden te tonen/verbergen</i></span>
           </p>
 	        <div id="ListWebScripts" class="w3-container w3-white w3-hide">
  		        <ul>
   			      <li>
-                <p>
-                  Voorbeeld van een onderzoeksvoortgangsrapport (Google Apps Script, HTML/CSS, JavaScript).
-                </p>
+                <p>Voorbeeld van een onderzoeksvoortgangsrapport (Google Apps Script, HTML/CSS, JavaScript).</p>
                 <a href="https://script.google.com/macros/s/AKfycby6x9j-M31yTR9XPuswcfCHuw0o62swjX92PvDWn13sArwvX1o/exec"  target="_blank" >
                 <img src="https://drive.google.com/uc?export=view&id=1rU3fcwPiUs01TYOYZbcmbJ5vJWk0P-Xv" style="width:100%" alt="RMTProgressReport_screenshot"></a>
 				        <span class="w3-tag w3-tiny w3-white">
@@ -276,6 +282,7 @@
         </div>
       </div>
 
+      <!-- Education -->
       <div class="w3-container w3-card-2 w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Opleiding</h2>
         <div class="w3-container">
@@ -291,6 +298,7 @@
           <p>Training Veilig Rijden - Gerhard Berger Training Center</p>
         </div>
       </div>
+
     </div>
     <!-- End of Right Pane -->
     
