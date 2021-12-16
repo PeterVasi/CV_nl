@@ -28,6 +28,19 @@
     width: 100%;
   }
 }
+
+details > summary {
+  padding-left: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+details > div {
+  padding-left: 0px;
+  margin-left: 20px;
+  background-color: #eeeeee;
+}
+
 </style>
 <body class="w3-light-grey">
 
@@ -91,7 +104,7 @@
           </div>
           <p>Nederlands</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:60%"></div>
           </div>
           <p>Zweeds</p>
           <div class="w3-light-grey w3-round-xlarge">
@@ -178,17 +191,70 @@
             <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
           </p>
           <div id="ListBackgroundOrgs" class="w3-container w3-white w3-hide">
-            <p>Technische Diensten voor Rijkswegen</p>
-            <p>Nationale Wegendatabank</p>
-            <p>Snelweg Directoraat</p>
-            <ul>
-  			      <li>R+D</li>
-  			      <li>Organiseren Tijdelijke en Permanente Verkeersmetingen</li>
-  			      <li>Analyseren gegevens over Wegconditie, Verkeer en Verkeersongevallen</li>
-  			      <li>Klassieke Databank taken</li>
-              <li>Inventariseren van Signalisatie en Wegmarkeringen</li>
-              <li>Wegomleiding Systeem en Werkzone Signalisatie aan Snelwegen</li>
-		        </ul>
+            <p>Technische Diensten voor Rijkswegen
+              <br>Nationale Wegendatabank
+              <br>Snelweg Directoraat
+            </p>
+            <details>
+              <summary>R+D</summary>
+              <div>
+                <p>Uitvoeren diverse projecten als opdrachtgever op het gebied van:</p>
+                <ul>
+                  <li>Wegconditie</li>
+                  <li>Verkeers Analyse</li>
+                  <li>Verkeersveiligheid</li>
+                </ul>  
+              </div>
+            </details>
+            <details>
+              <summary>Gegevensverzameling van Verkeersongevallen</summary>
+              <div>
+                <ul>
+                  <li>Verbeteren van de nauwkeurigheid van Nationale Gegevensverzameling</li>
+                  <li>Samenwerking met andere organisaties (Politie, Statistiekbureau, Wegbeheerders)</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Verkeersmetingen</summary>
+              <div>
+                <ul>
+                  <li>Ontwikkelen en organiseren Tijdelijke en Permanente Verkeersmetingen op Rijkswegen</li>
+                  <li>Introductie van Automatische Asgewicht Detectie</li>
+                </ul>  
+              </div>
+            </details>
+            <details>
+              <summary>Klassieke Databank taken</summary>
+              <div>
+                <ul>
+                  <li>Data Management</li>
+                  <li>SQL Queries</li>
+                  <li>Rapport maken</li>
+                  <li>Map visualisaties</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary><abbr title="Pavement Management System">PMS</abbr></summary>
+              <div>
+                <ul>
+                  <li>Deterioration Models met het gebruik van Markov Process</li>
+                  <li>Introductie van <abbr title="Highway Development and Management Model">HDM-4</abbr></li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Verkeers Ingenieur aan Snelwegen</summary>
+              <div>
+                <ul>
+                  <li>Analyseren gegevens over Verkeer en Verkeersongevallen</li>
+                  <li>Wegomleiding Systeem</li>
+                  <li>Ontwikkelen van Werkzone Signalisatie</li>
+                </ul>
+              </div>
+            </details>
+            <br>
           </div>
         </div>
       </div>
