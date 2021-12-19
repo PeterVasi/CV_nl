@@ -1,47 +1,17 @@
 <!DOCTYPE html>
 <html>
-<title>Peter Vasi</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-  .clickhere {cursor: pointer;}
-  .column {
-  float: left;
-  width: 25%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Responsive layout - makes the 4 columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
-
-details > summary {
-  padding-left: 20px;
-  border: none;
-  cursor: pointer;
-}
-
-details > div {
-  padding-left: 0px;
-  margin-left: 20px;
-  background-color: #eeeeee;
-}
-
-</style>
+<head>
+    <title>Peter Vasi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}    
+    </style>    
+</head>
 <body class="w3-light-grey">
 
 <!-- Page Container -->
@@ -54,10 +24,13 @@ details > div {
     <div class="w3-third">
 
       <!-- Photo and Contact  -->
-      <div class="w3-white w3-text-grey w3-card-4  w3-margin-bottom"> 
+      <div class=" w3-text-grey w3-card-4 w3-white w3-margin-bottom"> 
         <div class="w3-display-container">
-		      <img src="https://drive.google.com/uc?export=view&id=134iglTNQfUfUcanZFvecHkGYhyFTSKUL" style="width:100%" alt="PVasi Photo">
-		      <!--img src="https://drive.google.com/uc?export=view&id=1f0eojfgMdfL9SvRh15CiLyXLb1IBZncT" style="width:100%" alt="PVasi Photo"-->
+		      <img 
+            src="https://drive.google.com/uc?export=view&id=134iglTNQfUfUcanZFvecHkGYhyFTSKUL" 
+            style="width:100%" 
+            alt="PVasi Photo"
+          >
 		      <div class="w3-display-bottomleft w3-container w3-text-white">
 		        <h2>Peter Vasi</h2>
        	  </div>
@@ -71,7 +44,7 @@ details > div {
       </div>
 
       <!-- Base Skills, Language Skills  -->
-      <div class="w3-white w3-text-grey w3-card-4  w3-margin-bottom">
+      <div class=" w3-text-grey w3-card-4 w3-white w3-margin-bottom">
         <div class="w3-container">
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Vaardigheden</b></p>
           <p>Data Management</p>
@@ -131,241 +104,402 @@ details > div {
       <!-- Work Experience -->
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
 	      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Werkervaring</h2>
+
+        <!--Wegenonderzoek-->        
         <div class="w3-container">
           <h5 class="w3-text-teal"><b>Specialist in Wegenonderzoek</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2020 <span class="w3-tag w3-teal w3-opacity w3-round">meest recente job</span></h6>
-	        <p onclick="ShowHide('ListSURVEYS')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Ramboll Zweden<br>T7 Engineering Hongarije<br><span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span></p>
-	        <div id="ListSURVEYS" class="w3-container w3-white w3-hide">
-		        <p>Planning en uitvoering van wegconditieonderzoeken, verwerking en visualisering meetresultaten</p>
- 		        <ul>
-  			      <li>Road Surface Tester - Laser RST</li>
-  			      <li>Road Marking Retroreflectometer - RMT, DELTA LTL-M</li>
-  			      <li>Ground Penetrating Radar - GPR, 3D-Radar</li>
-  			      <li>Road Friction Tester - ViaFriction</li>
-  			      <li>Falling Weight Deflectometer - KUAB, Curviameter</li>			  
-		        </ul>
-            <div class="row">
-              <div class="column">
-                <img src="https://drive.google.com/uc?export=view&id=1yKsXrqqFFBOrVvZRFyEwE2g9bq5cpuEk" style="width:100%;" alt="RST">
+
+          <p onclick="ShowHide(this.nextElementSibling)" 
+            class="w3-hover-light-grey w3-block w3-left-align clickHeretoShowHide">
+            Ramboll Zweden
+            <br>
+            T7 Engineering Hongarije
+            <br>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+          </p>
+
+	        <div id="ListSURVEYS" class="w3-container  w3-hide collapsingDiv">
+            <div>
+              <p>Planning en uitvoering van wegconditieonderzoeken, verwerking en visualisering meetresultaten</p>
+              <ul>
+               <li>Road Surface Tester - Laser RST</li>
+               <li>Road Marking Retroreflectometer - RMT, DELTA LTL-M</li>
+               <li>Ground Penetrating Radar - GPR, 3D-Radar</li>
+               <li>Road Friction Tester - ViaFriction</li>
+               <li>Falling Weight Deflectometer - KUAB, Curviameter</li>			  
+              </ul> 
+            </div>
+
+            <div class="gridContainer1">
+              <div>
+                <img 
+                  src="https://drive.google.com/uc?export=view&id=1yKsXrqqFFBOrVvZRFyEwE2g9bq5cpuEk" 
+                  style="width:100%;" 
+                  alt="RST"
+                >
               </div>
-              <div class="column">
-                <img src="https://drive.google.com/uc?export=view&id=1Zimm-7uMZBTWBvRZ5RyxsnItE-tOXyp1" style="width:100%;" alt="RMT">
+              <div>
+                <img 
+                  src="https://drive.google.com/uc?export=view&id=1Zimm-7uMZBTWBvRZ5RyxsnItE-tOXyp1" 
+                  style="width:100%;" 
+                  alt="RMT"
+                >
               </div>
-              <div class="column">
-                <img src="https://drive.google.com/uc?export=view&id=1zmD4GTQld5O-W1wkAns3XLH5ZlfSGvTF" style="width:100%;" alt="GPR 3D-Radar">
+              <div>
+                <img 
+                  src="https://drive.google.com/uc?export=view&id=1zmD4GTQld5O-W1wkAns3XLH5ZlfSGvTF" 
+                  style="width:100%;" 
+                  alt="GPR 3D-Radar"
+                >
               </div>
-              <div class="column">
-                <img src="https://drive.google.com/uc?export=view&id=1jpKItm8nRapkFxnvZKcC9mpJdiVP2mhl" style="width:100%;" alt="ViaFriction">
+              <div>
+                <img 
+                  src="https://drive.google.com/uc?export=view&id=1jpKItm8nRapkFxnvZKcC9mpJdiVP2mhl" 
+                  style="width:100%;" 
+                  alt="ViaFriction"
+                >              
               </div>
             </div>
+
+            <p onclick="Hide(this.parentElement)" class="w3-hover-light-grey w3-block w3-left-align clickHeretoHide">
+              <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+            </p>
 	        </div>     
           <hr>
         </div>
         
+        <!--Ministry-->
         <div class="w3-container">
           <h5 class="w3-text-teal"><b>Specialist in Verkeersveiligheid</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2002 - 2005</h6>
-	        <p onclick="ShowHide('ListMINISTRY')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Ministerie van Transport
+	        <p onclick="ShowHide(this.nextElementSibling)" 
+            class="w3-hover-light-grey w3-block  w3-left-align clickHeretoShowHide">
+            Ministerie van Transport
             <br>
-            <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
           </p>
-	        <div id="ListMINISTRY" class="w3-container w3-white w3-hide">
-		        <p>Hoofd van afd. Verkeersveiligheid</p>
- 		        <ul>
-  			      <li>Analyse</li>
-  			      <li>Policy Making</li>
-  			      <li>Actieplan voor verkeersveiligheid</li>
-  			      <li>Harmonisatikwesties EU-wetgeving</li>
-		        </ul>
+	        <div id="ListMINISTRY" class="w3-container  w3-hide collapsingDiv">
+            <div>
+              <p>Hoofd van afd. Verkeersveiligheid</p>
+              <ul>
+               <li>Analyse</li>
+               <li>Policy Making</li>
+               <li>Actieplan voor verkeersveiligheid</li>
+               <li>Harmonisatikwesties EU-wetgeving</li>
+              </ul>
+            </div>
+            <p onclick="Hide(this.parentElement)" class="w3-hover-light-grey w3-block w3-left-align clickHeretoHide">
+              <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+            </p>
 	        </div>          
           <hr>
         </div>
+
+        <!--AKMI-->
         <div class="w3-container">
-          <h5 class="w3-text-teal"><b>Wegconditieonderzoek Ingenieur<br>Verkeers Ingenieur<br>Databank Ingenieur</b></h5>
+          <h5 class="w3-text-teal">
+            <b>Wegconditieonderzoek Ingenieur
+              <br>
+              Verkeers Ingenieur
+              <br>
+              Databank Ingenieur
+            </b>
+          </h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1990 - 2001</h6>
-          <p onclick="ShowHide('ListBackgroundOrgs')" 
-            class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere" 
-            style="padding-left:0px">
+
+          <p onclick="ShowHide(this.nextElementSibling)" 
+            class="w3-hover-light-grey w3-block  w3-left-align clickHeretoShowHide">
             Achtergrondorganisaties van Ministerie van Transport
             <br>
-            <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
           </p>
-          <div id="ListBackgroundOrgs" class="w3-container w3-white w3-hide">
-            <p>Technische Diensten voor Rijkswegen
-              <br>Nationale Wegendatabank
-              <br>Snelweg Directoraat
+          <div id="ListBackgroundOrgs" class="w3-container  w3-hide collapsingDiv">
+            <div>
+              <p>Technische Diensten voor Rijkswegen
+                <br>Nationale Wegendatabank
+                <br>Snelweg Directoraat
+              </p>
+              <details>
+                <summary>R+D</summary>
+                <div>
+                  <p>Uitvoeren diverse projecten als opdrachtgever op het gebied van:</p>
+                  <ul>
+                    <li>Wegconditie</li>
+                    <li>Verkeers Analyse</li>
+                    <li>Verkeersveiligheid</li>
+                  </ul>  
+                </div>
+              </details>
+              <details>
+                <summary>Gegevensverzameling van Verkeersongevallen</summary>
+                <div>
+                  <ul>
+                    <li>Verbeteren de nauwkeurigheid van Nationale Gegevensverzameling</li>
+                    <li>Samenwerking met andere organisaties (Politie, Statistiekbureau, Wegbeheerders)</li>
+                  </ul>
+                </div>
+              </details>
+              <details>
+                <summary>Verkeersmetingen</summary>
+                <div>
+                  <ul>
+                    <li>Ontwikkelen en organiseren Tijdelijke en Permanente Verkeersmetingen op Rijkswegen</li>
+                    <li>Introductie van Automatische Asgewicht Detectie</li>
+                  </ul>  
+                </div>
+              </details>
+              <details>
+                <summary>Klassieke Databank taken</summary>
+                <div>
+                  <ul>
+                    <li>Data Management</li>
+                    <li>SQL Queries</li>
+                    <li>Rapport maken</li>
+                    <li>Map visualisaties</li>
+                  </ul>
+                </div>
+              </details>
+              <details>
+                <summary><abbr title="Pavement Management System">PMS</abbr></summary>
+                <div>
+                  <ul>
+                    <li>Deterioration Models met het gebruik van Markov Process</li>
+                    <li>Introductie van <abbr title="Highway Development and Management Model">HDM-4</abbr></li>
+                  </ul>
+                </div>
+              </details>
+              <details>
+                <summary>Verkeers Ingenieur aan Snelwegen</summary>
+                <div>
+                  <ul>
+                    <li>Analyseren gegevens over Verkeer en Verkeersongevallen</li>
+                    <li>Wegomleiding Systeem</li>
+                    <li>Ontwikkelen van Werkzone Signalisatie</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+            <p onclick="Hide(this.parentElement)" class="w3-hover-light-grey w3-block w3-left-align clickHeretoHide">
+              <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
             </p>
-            <details>
-              <summary>R+D</summary>
-              <div>
-                <p>Uitvoeren diverse projecten als opdrachtgever op het gebied van:</p>
-                <ul>
-                  <li>Wegconditie</li>
-                  <li>Verkeers Analyse</li>
-                  <li>Verkeersveiligheid</li>
-                </ul>  
-              </div>
-            </details>
-            <details>
-              <summary>Gegevensverzameling van Verkeersongevallen</summary>
-              <div>
-                <ul>
-                  <li>Verbeteren van de nauwkeurigheid van Nationale Gegevensverzameling</li>
-                  <li>Samenwerking met andere organisaties (Politie, Statistiekbureau, Wegbeheerders)</li>
-                </ul>
-              </div>
-            </details>
-            <details>
-              <summary>Verkeersmetingen</summary>
-              <div>
-                <ul>
-                  <li>Ontwikkelen en organiseren Tijdelijke en Permanente Verkeersmetingen op Rijkswegen</li>
-                  <li>Introductie van Automatische Asgewicht Detectie</li>
-                </ul>  
-              </div>
-            </details>
-            <details>
-              <summary>Klassieke Databank taken</summary>
-              <div>
-                <ul>
-                  <li>Data Management</li>
-                  <li>SQL Queries</li>
-                  <li>Rapport maken</li>
-                  <li>Map visualisaties</li>
-                </ul>
-              </div>
-            </details>
-            <details>
-              <summary><abbr title="Pavement Management System">PMS</abbr></summary>
-              <div>
-                <ul>
-                  <li>Deterioration Models met het gebruik van Markov Process</li>
-                  <li>Introductie van <abbr title="Highway Development and Management Model">HDM-4</abbr></li>
-                </ul>
-              </div>
-            </details>
-            <details>
-              <summary>Verkeers Ingenieur aan Snelwegen</summary>
-              <div>
-                <ul>
-                  <li>Analyseren gegevens over Verkeer en Verkeersongevallen</li>
-                  <li>Wegomleiding Systeem</li>
-                  <li>Ontwikkelen van Werkzone Signalisatie</li>
-                </ul>
-              </div>
-            </details>
-            <br>
           </div>
         </div>
       </div>
       
 
-      <!-- Other Work Experience -->
+      <!-- OTHER WORKS -->
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Andere Ervaringen en Vaardigheden</h2>
+        <h2 class="w3-text-grey w3-padding-16">
+          <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Andere Ervaringen en Vaardigheden
+        </h2>
+
+        <!--Internatinale Org-->
         <div class="w3-container">
           <h5 class="w3-text-teal"><b>Werken in Internationale Organizaties</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1996 - 2005</h6>
-          <p onclick="ShowHide('ListPIARC')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">AIPCR/PIARC World Road Association
-              <br>
-              <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
+
+          <!--PIARC-->
+          <p onclick="ShowHide(this.nextElementSibling)" 
+            class="w3-hover-light-grey w3-block  w3-left-align clickHeretoShowHide">
+            AIPCR/PIARC World Road Association
+            <br>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
           </p>
-          <div id="ListPIARC" class="w3-container w3-white w3-hide">
-            <img src="https://www.piarc.org/ressources/documents/2398,Logo-HR300.jpg" style="width:30%; display:block; margin:auto" alt="AIPCR/PIARC">	
-            <ul>
-              <li>
-                <a href="https://www.piarc.org/en/"  target="_blank">AIPCR/PIARC World Road Association</a> is waarschijnlijk de meest vooraanstaande internationale organisatie 
+
+          <div id="ListPIARC" class="w3-container w3-hide collapsingDiv">
+            <div class="gridContainer2">
+              <div>
+                <img 
+                src="https://www.piarc.org/ressources/documents/2398,Logo-HR300.jpg" 
+                width="100%"
+                alt="AIPCR/PIARC"
+                >
+              </div>
+              <div>
+                <a 
+                href="https://www.piarc.org/en/"  
+                target="_blank">AIPCR/PIARC World Road Association</a> is waarschijnlijk de meest vooraanstaande internationale organisatie 
                 op het gebied van wegenbeheer en wegenontwikkeling. 
-                De Vereneging heeft nu wereldwijd 121 regeringsleden en behoudt de raadgevende status van de Economische en Social Raad van de Verenigde Naties. 
-                Ik had het voorrecht om Hongarije te vertegenwoordigen in de Verkeersveiligheid Comissie van AIPCR/PIARC tussen 1996 en 2003.
-              </li>
-              <li>
+                De Vereneging heeft nu wereldwijd 121 regeringsleden en behoudt de raadgevende 
+                status van de Economische en Social Raad van de Verenigde Naties. 
+                Ik had het voorrecht om Hongarije te vertegenwoordigen in de 
+                Verkeersveiligheid Comissie van AIPCR/PIARC tussen 1996 en 2003.                
+              </div>
+              <div>              
+                <img 
+                src="https://www.piarc.org/ressources/cover/6/14750-Manuel-Securite-Routiere-Association-Mondiale-de-la-Route.jpg" 
+                width="100%"
+                alt="RoadSafetyManual"
+                >	
+              </div>
+              <div style="display:table-cell; vertical-align: middle;">
                 Een van de belangrijkste bijdragen van de Vereneging in die periode was Road Safety Manual. 
                 Mijn bijdrage aan de Manual was het schrijven van het hoofdstuk Data Collection.
-              </li>
-            </ul>
-            <img src="https://www.piarc.org/ressources/cover/6/14750-Manuel-Securite-Routiere-Association-Mondiale-de-la-Route.jpg" style="width:20%; display:block; margin:auto" alt="RoadSafetyManual">		
-          </div>          
-          <p onclick="ShowHide('ListGRSP')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Global Road Safety Partnership (GRSP)
+              </div>
+            </div>
+
+            <p onclick="Hide(this.parentElement)" class="w3-hover-light-grey w3-block w3-left-align clickHeretoHide">
+              <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+            </p>
+          </div> 
+
+          <!-- GRSP -->         
+          <p onclick="ShowHide(this.nextElementSibling)" 
+            class="w3-hover-light-grey w3-block  w3-left-align clickHeretoShowHide">
+            Global Road Safety Partnership (GRSP)
             <br>
-            <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
           </p>
-          <div id="ListGRSP" class="w3-container w3-white w3-hide">
-            <img src="https://www.grsproadsafety.org/wp-content/uploads/grsproadsafety_logo.png" style="width:60%; display:block; margin:auto" alt="GRSP">
-            <ul>
-              <li>Het doel van <a href="https://www.grsproadsafety.org/"  target="_blank">GRSP Global Road Safety Partnership</a> is het creëren en ondersteunen 
-              van multisectorale verkeersveiligheids samenwerkingsverbanden die zich bezighouden met front-line interventies op het gebied van verkeersveiligheid in landen en gemeenschappen over de hele wereld. 
-              Tussen 2000 en 2005 kreeg ik de kans om te werken als programmacoördinator voor GRSP Hongarije.</li>
-              <li>In 2005 hielp ik het werk van GRSP Sakhalin Island (Rusland) als externe specialist in opdracht van GRSP Geneve en het Internationale Rode Kruis (IFRC).</li>
-            </ul>
-          </div>          
+
+          <div id="ListGRSP" class="w3-container w3-hide collapsingDiv">
+            <div class="gridContainer3">
+              <div>
+                <img 
+                src="https://www.grsproadsafety.org/wp-content/uploads/grsproadsafety_logo.png" 
+                style="width:100%"
+                alt="GRSP"
+                >  
+              </div>
+              <div>
+                <p>Het doel van <a href="https://www.grsproadsafety.org/"  target="_blank"><abbr title="Global Road Safety Partnership">GRSP</abbr></a> is het creëren en ondersteunen 
+                  van multisectorale verkeersveiligheids samenwerkingsverbanden die zich bezighouden met front-line interventies op het gebied van verkeersveiligheid in landen en gemeenschappen over de hele wereld. 
+                  Tussen 2000 en 2005 werkde ik als programmacoördinator voor GRSP Hongarije.
+                </p>
+                <p>
+                  In 2005 hielp ik het werk van GRSP Sakhalin Island (Rusland) als externe specialist in opdracht van GRSP Geneve en het <abbr title="Internationale Rode Kruis">IFRC</abbr>.</li>
+                </p>
+              </div>
+            </div>
+            <p onclick="Hide(this.parentElement)" class="w3-hover-light-grey w3-block w3-left-align clickHeretoHide">
+              <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+            </p>  
+          </div>
+
+          <!--Europese Raad-->
           <p>Europese Raad - Werkgroep EU Rijbewijsharmonisatie</p>
           <hr>
         </div>
+
+        <!--Bedrijfsbeheer-->
         <div class="w3-container">
           <h5 class="w3-text-teal"><b>Ervaring in Bedrijfsbeheer</b></h5>
           <p>Bestuurslid in een provinciaal Openbaar Vervoer Bedrijf in Hongarije</p>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2002 - 2004</h6>
           <hr>
         </div>
+
+        <!--Digitale Vaarigheden-->
         <div class="w3-container">
           <h5 class="w3-text-teal"><b>Digitale Vaardigheden</b></h5>
     		  <p>Data Management</p>
-	        <p onclick="ShowHide('ListGIS')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">GIS Applications
+
+          <!--GIS-->
+	        <p onclick="ShowHide(this.nextElementSibling)" 
+            class="w3-hover-light-grey w3-block  w3-left-align clickHeretoShowHide">
+            GIS Applications
             <br>
-            <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier voor meer/minder details</i></span>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
           </p>
-	        <div id="ListGIS" class="w3-container w3-white w3-hide">
- 		        <ul>
-  			      <li>ArcView</li>
-  			      <li>MapInfo</li>
-  			      <li>QGIS</li>
-  			      <li>Google Earth, Google Maps</li>
-  			      <li>Leaflet/OpenStreetMap (JavaScript Library)</li>
-  			      <li>Navit (Linux)</li>
- 			        <li>Folium Map (Python)</li>
-		        </ul>
-	        </div>          
-	        <p onclick="ShowHide('ListWebScripts')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Cloud Based Data Visualizations and Web Applications
+
+	        <div id="ListGIS" class="w3-container w3-hide collapsingDiv">
+            <div>
+              <ul>
+                <li>ArcView</li>
+                <li>MapInfo</li>
+                <li>QGIS</li>
+                <li>Google Earth, Google Maps</li>
+                <li>Leaflet/OpenStreetMap (JavaScript Library)</li>
+                <li>Navit (Linux)</li>
+                 <li>Folium Map (Python)</li>
+              </ul>
+            </div>
+            <p onclick="Hide(this.parentElement)" class="w3-hover-light-grey w3-block w3-left-align clickHeretoHide">
+              <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+            </p>
+	        </div>
+
+          <!--WebScripts-->
+	        <p onclick="ShowHide(this.nextElementSibling)" 
+            class="w3-hover-light-grey w3-block  w3-left-align clickHeretoShowHide">
+            Cloud Based Data Visualizations and Web Applications
             <br>
-            <span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier om voorbeelden te tonen/verbergen</i></span>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
           </p>
-	        <div id="ListWebScripts" class="w3-container w3-white w3-hide">
- 		        <ul>
-  			      <li>
-                <p>Voorbeeld van een onderzoeksvoortgangsrapport (Google Apps Script, HTML/CSS, JavaScript).</p>
-                <a href="https://script.google.com/macros/s/AKfycby6x9j-M31yTR9XPuswcfCHuw0o62swjX92PvDWn13sArwvX1o/exec"  target="_blank" >
-                <img src="https://drive.google.com/uc?export=view&id=1rU3fcwPiUs01TYOYZbcmbJ5vJWk0P-Xv" style="width:100%" alt="RMTProgressReport_screenshot"></a>
-				        <span class="w3-tag w3-tiny w3-white">
-                  Klik op de afbeelding om de live versie te zien. 
-                  (Sta Google Apps Script toe aub. in uw browser wanneer daarom wordt gevraagd.)
-                </span>
-              </li>
-              <!--li>
-                <a href="https://script.google.com/macros/s/AKfycbxYw_wGyMpIC98oaBbiJ13mlPXdnXqqOwKhD5CBbQAaroJfNfu8/exec"  target="_blank">Klik hier</a> om een andere voorbeeld van een visualisatie van meetresultaten te zien(FWD in Serbia).
-			    	    <span class="w3-tag w3-tiny w3-white">(sta Google Apps Script toe aub. in uw browser wanneer daarom wordt gevraagd)</span>
-              </li-->
-		        </ul>
-	        </div>          
-	        <p onclick="ShowHide('ListCodeExample')" class="w3-hover-light-grey w3-block w3-white w3-left-align clickhere"; style="padding-left:0px">Software Ontwikkeling in Javascript, HTML/CSS, Python, Linux<br><span class="w3-tag w3-tiny w3-round w3-light-grey"><i>klik hier om voorbeelden te tonen/verbergen</i></span></p>
-	        <div id="ListCodeExample" class="w3-container w3-white w3-hide">
- 		        <ul>
-	            <li><p>Google Earth kaartvisualisatie gemaakt van wegconditie meetresultaat (Linux Bash Script, KMZ)</p>
-				        <img src="https://drive.google.com/uc?export=view&id=1hn0gHjB-nerdNmWx97wPp33fuosJGw3j" style="width:100%" alt="GEarthVisualization1">
-			        </li>
-			        <br>
-			        <li><p>PDF-rapport gemaakt van Winter Friction meetresultaat (Python)</p>
-			    	    <img src="https://drive.google.com/uc?export=view&id=1UhFxj5p3hj6VB5seoSlNfqWDOdpTfrsu" style="width:70%; display:block; margin:auto" alt="ViaFrictionVisualizationPDF">
-              </li>
-			        <br>
-			        <li><p>OpenStreeetMap kaartvisualisatie gemaakt van Winter Friction meetresultaat (Python, Folium Map)</p>
-			    	    <img src="https://drive.google.com/uc?export=view&id=1g7jN4XZeEU4OTkeBQOnVx8HKzU-HIIY9" style="width:100%; display:block; margin:auto" alt="ViaFrictionVisualizationFOLIUM">
-			        </li>
-			        <br>
-		        </ul>
-	        </div>          
+
+	        <div id="ListWebScripts" class="w3-container  w3-hide collapsingDiv">
+            <div>
+              <ul>
+                <li>
+                  <p>Voorbeeld van een onderzoeksvoortgangsrapport (Google Apps Script, HTML/CSS, JavaScript).</p>
+                  <a href="https://script.google.com/macros/s/AKfycby6x9j-M31yTR9XPuswcfCHuw0o62swjX92PvDWn13sArwvX1o/exec"  target="_blank" >
+                  <img 
+                    src="https://drive.google.com/uc?export=view&id=1rU3fcwPiUs01TYOYZbcmbJ5vJWk0P-Xv" 
+                    style="width:100%" 
+                    alt="RMTProgressReport_screenshot"
+                  >
+                  </a>
+                  <span class="w3-tag w3-tiny w3-white">
+                    Klik op de afbeelding om de live versie te zien. 
+                    (Sta Google Apps Script toe aub. in uw browser wanneer daarom wordt gevraagd.)
+                  </span>
+                </li>
+                <!--li>
+                  <a href="https://script.google.com/macros/s/AKfycbxYw_wGyMpIC98oaBbiJ13mlPXdnXqqOwKhD5CBbQAaroJfNfu8/exec"  target="_blank">Klik hier</a> om een andere voorbeeld van een visualisatie van meetresultaten te zien(FWD in Serbia).
+                  <span class="w3-tag w3-tiny ">(sta Google Apps Script toe aub. in uw browser wanneer daarom wordt gevraagd)</span>
+                </li-->
+              </ul>  
+            </div>
+            <p onclick="Hide(this.parentElement)" class="w3-hover-light-grey w3-block w3-left-align clickHeretoHide">
+              <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+            </p>
+	        </div>
+
+          <!--Coding-->
+	        <p onclick="ShowHide(this.nextElementSibling)" 
+            class="w3-hover-light-grey w3-block  w3-left-align clickHeretoShowHide">
+            Software Ontwikkeling in Javascript, HTML/CSS, Python, Linux
+            <br>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+          </p>
+
+	        <div id="ListCodeExample" class="w3-container  w3-hide collapsingDiv">
+            <div>
+              <ul>
+                <li><p>Google Earth kaartvisualisatie gemaakt van wegconditie meetresultaat (Linux Bash Script, KMZ)</p>
+                  <img 
+                    src="https://drive.google.com/uc?export=view&id=1hn0gHjB-nerdNmWx97wPp33fuosJGw3j" 
+                    style="width:100%" 
+                    alt="GEarthVisualization1"
+                  >
+                </li>
+                <br>
+                <li><p>PDF-rapport gemaakt van Winter Friction meetresultaat (Python)</p>
+                  <img 
+                    src="https://drive.google.com/uc?export=view&id=1UhFxj5p3hj6VB5seoSlNfqWDOdpTfrsu" 
+                    style="width:70%; display:block; margin:auto" 
+                    alt="ViaFrictionVisualizationPDF"
+                  >
+                </li>
+                <br>
+                <li><p>OpenStreeetMap kaartvisualisatie gemaakt van Winter Friction meetresultaat (Python, Folium Map)</p>
+                  <img 
+                    src="https://drive.google.com/uc?export=view&id=1g7jN4XZeEU4OTkeBQOnVx8HKzU-HIIY9" 
+                    style="width:100%; display:block; margin:auto" 
+                    alt="ViaFrictionVisualizationFOLIUM"
+                  >
+                </li>
+              </ul>  
+            </div>
+            <p onclick="Hide(this.parentElement)" class="w3-hover-light-grey w3-block w3-left-align clickHeretoHide">
+              <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+            </p>
+	        </div>
+                  
           <hr>
         </div>
+
+        <!--Career Break-->
         <div class="w3-container">
           <h5 class="w3-text-teal"><b>Loopbaanonderbreking in Azië</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2005 - 2013</h6>
@@ -373,30 +507,55 @@ details > div {
         </div>
       </div>
 
-      <!-- Education -->
+      <!-- EDUCATION -->
       <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Opleiding</h2>
+
+        <h2 class="w3-text-grey w3-padding-16">
+          <i class="fa fa-graduation-cap fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+          Opleiding
+        </h2>
+
+        <!--University-->
         <div class="w3-container">
-          <h5 class="w3-text-teal"><b>Technische Universiteit van Boedapest - Hongarije</b></h5>
+          <h5 class="w3-text-teal">
+            <b>Technische Universiteit van Boedapest - Hongarije</b>
+          </h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1982 - 1988</h6>
           <p>Burgerlijk Ingenieur - Weg en Spoorweg</p>
           <hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-text-teal"><b>Andere Diploma's en Trainingen</b></h5>
-          <p>Diploma Publieke Administratie</p>
-          <p>GPS/GIS Technologies - ArcView GIS Training</p>
-          <p>Training Veilig Rijden - Gerhard Berger Training Center</p>
-        </div>
-      </div>
 
+        <!--Other Diplomas-->
+        <div class="w3-container">
+          <h5 onclick="ShowHide(this.nextElementSibling)" 
+            class="w3-text-teal w3-hover-light-grey w3-hover-text-teal w3-block w3-left-align clickHeretoShowHide">
+            <b>Andere Diploma's en Trainingen</b>
+            <br>
+            <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+          </h5>
+          <div id="ListAndereDiplomas" class="w3-container w3-hide collapsingDiv">
+            <div>
+              <ul>
+                <li>Diploma Publieke Administratie</li>
+                <li>GPS/GIS Technologies - ArcView GIS Training</li>
+                <li>Training Veilig Rijden - Gerhard Berger Training Center</li>
+                <li>Highway Development and Management Model (HDM-4)</li>
+              </ul>  
+            </div>
+            <p onclick="Hide(this.parentElement)" class="w3-hover-light-grey w3-block w3-left-align clickHeretoHide">
+              <span class="w3-tag w3-tiny w3-round w3-light-grey w3-left-align"></span>
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
     <!-- End of Right Pane -->
     
   <!-- End Grid -->
   </div>
   
-  <!-- End Page Container -->
+<!-- End Page Container -->
 </div>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
@@ -407,8 +566,13 @@ details > div {
 <script>
 
 //Toggle Show and Hide
-function ShowHide(id) {
-  document.getElementById(id).classList.toggle("w3-show")
+function ShowHide(obj) {
+  obj.classList.toggle("w3-show")
+}
+
+//Toggle Show and Hide
+function Hide(obj) {
+  obj.classList.toggle("w3-show")
 }
 
 //decode personal data
